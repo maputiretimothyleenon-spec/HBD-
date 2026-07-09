@@ -162,8 +162,5 @@ section{
     align-items: center;
     padding: 100px 20px;
     text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeIn 1s ease forwards;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);;
 }
