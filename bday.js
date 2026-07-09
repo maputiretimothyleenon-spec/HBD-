@@ -38,22 +38,46 @@ function createFlowers(){
 
 }
 
-function createFireworks(){
+// function createFireworks(){
+
+//     for(let i=0;i<40;i++){
+
+//         let spark=document.createElement("div");
+
+//         spark.className="firework";
+
+//         spark.style.left=(window.innerWidth/2)+(Math.random()*300-150)+"px";
+
+//         spark.style.top=(window.innerHeight/2)+(Math.random()*300-150)+"px";
+
+//         spark.style.background=
+//         `hsl(${Math.random()*360},100%,60%)`;
+
+//         area.appendChild(spark);
+
+//     }
+
+// }
+
+function createFlowers(){
+
+    const flowers=["🌸","🌺","🌷","🌹","💮"];
 
     for(let i=0;i<40;i++){
 
-        let spark=document.createElement("div");
+        let flower=document.createElement("div");
 
-        spark.className="firework";
+        flower.className="flower";
 
-        spark.style.left=(window.innerWidth/2)+(Math.random()*300-150)+"px";
+        flower.innerHTML=flowers[Math.floor(Math.random()*flowers.length)];
 
-        spark.style.top=(window.innerHeight/2)+(Math.random()*300-150)+"px";
+        flower.style.left=Math.random()*100+"vw";
 
-        spark.style.background=
-        `hsl(${Math.random()*360},100%,60%)`;
+        flower.style.animationDelay=(Math.random()*4)+"s";
 
-        area.appendChild(spark);
+        flower.style.fontSize=(20+Math.random()*25)+"px";
+
+        area.appendChild(flower);
 
     }
 
