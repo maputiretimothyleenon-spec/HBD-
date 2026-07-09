@@ -3,7 +3,7 @@ body{
     background-color: rgb(223, 14, 199);
     background:  radial-gradient(circle at top, #4a0484, #0B0B0B 70%);
     color: #dadbb1;
-    height: 100hv;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +43,7 @@ p{
     margin-bottom: 40px;
     max-width: 600px;
     line-height: 0.8;
-    opacity: 0..85;
+    opacity: 0.85;
 }
 
 button{
@@ -59,7 +59,7 @@ button{
     background: linear-gradient(135deg, #dadac2, #0c0c0c);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0, 4);
 }
-.button:hover{
+button:hover{
     transform: scale(1.1);
 }
 .hidden{
