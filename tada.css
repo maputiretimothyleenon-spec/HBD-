@@ -3,7 +3,7 @@ body{
     background-color: rgb(223, 14, 199);
     background:  radial-gradient(circle at top, #4a0484, #0B0B0B 70%);
     color: #dadbb1;
-    height: 100vh;
+    height: 100hv;
     display: flex;
     flex-direction: column;
     justify-content: center;
