@@ -15,13 +15,31 @@ body{
 
 
 #the-wish{
-    backgroundd: rgba(255,255,255,0.92);
+
+    position:relative;
+    z-index:10;
+
+    background:white;
+    color:#333;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    width:80%;
+    max-width:700px;
+
+    margin:auto;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+    /* backgroundd: rgba(255,255,255,0.92);
     padding: 30px;
     border-radius:20px;
     max-width:700px;
     margin:300px auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-}
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25); */
     h1{
     font-size: 3rem;
     letter-spacing: 1px;
@@ -63,7 +81,7 @@ button{
     opacity: 1;
     transform: translateY(0);
 }
-.flower{
+/* .flower{
     position: absolute;
     font-size: 40px;
     animation: flowerBloom 2s forwards;
@@ -79,8 +97,38 @@ button{
         transform: scale(1.5);
     }
 }
+ */
+#animation-area{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:1;
+}
 
+.flower{
+    position:absolute;
+    top:-60px;
+    font-size:30px;
+    animation:fall 6s linear forwards;
+}
 
+@keyframes fall{
+
+    from{
+        transform:translateY(-60px) rotate(0deg);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(110vh) rotate(720deg);
+        opacity:0;
+    }
+
+}
 .firework{
 
     position:absolute;
