@@ -18,46 +18,46 @@ button.addEventListener("click", function(){
 
 });
 
-function createFlowers(){
+// function createFlowers(){
 
-    for(let i=0;i<15;i++){
+//     for(let i=0;i<15;i++){
 
-        let flower=document.createElement("div");
+//         let flower=document.createElement("div");
 
-        flower.className="flower";
+//         flower.className="flower";
 
-        flower.innerHTML="🌸";
+//         flower.innerHTML="🌸";
 
-        flower.style.left=Math.random()*window.innerWidth+"px";
+//         flower.style.left=Math.random()*window.innerWidth+"px";
 
-        flower.style.top=Math.random()*window.innerHeight+"px";
+//         flower.style.top=Math.random()*window.innerHeight+"px";
 
-        area.appendChild(flower);
-
-    }
-
-}
-
-// function createFireworks(){
-
-//     for(let i=0;i<40;i++){
-
-//         let spark=document.createElement("div");
-
-//         spark.className="firework";
-
-//         spark.style.left=(window.innerWidth/2)+(Math.random()*300-150)+"px";
-
-//         spark.style.top=(window.innerHeight/2)+(Math.random()*300-150)+"px";
-
-//         spark.style.background=
-//         `hsl(${Math.random()*360},100%,60%)`;
-
-//         area.appendChild(spark);
+//         area.appendChild(flower);
 
 //     }
 
 // }
+
+ function createFireworks(){
+
+     for(let i=0;i<40;i++){
+
+         let spark=document.createElement("div");
+
+         spark.className="firework";
+
+         spark.style.left=(window.innerWidth/2)+(Math.random()*300-150)+"px";
+
+         spark.style.top=(window.innerHeight/2)+(Math.random()*300-150)+"px";
+
+         spark.style.background=
+         `hsl(${Math.random()*360},100%,60%)`;
+
+         area.appendChild(spark);
+
+     }
+
+ }
 
 function createFlowers(){
 
