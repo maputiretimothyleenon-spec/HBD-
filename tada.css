@@ -4,9 +4,6 @@ body{
     background:  radial-gradient(circle at top, #4a0484, #0B0B0B 70%);
     color: #dadbb1;
     height: 100hv;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;}
 .container{
